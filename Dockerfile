@@ -13,11 +13,13 @@ ENV SERVICE_NAME=hms \
     SERVICE_URL=https://github.com/4km3/hms.git
 
 # Download and install hms
-RUN cd ${SERVICE_HOME}/www && \
+RUN apk add --no-cache git && \
+    cd ${SERVICE_HOME}/www && \
     git clone ${SERVICE_URL} && \
     cd hms/docs && \
     git clone -b ${REVEAL_VERSION} ${REVEAL_URL} && \
     rm -rf reveal.js/test && \
+    apk del --no-cache git && \
     addgroup -g ${SERVICE_GID} ${SERVICE_GROUP} && \
     adduser -g "${SERVICE_NAME} user" -D -h ${SERVICE_HOME} -G ${SERVICE_GROUP} -s /sbin/nologin -u ${SERVICE_UID} ${SERVICE_USER} 
 ADD root /

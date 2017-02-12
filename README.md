@@ -13,7 +13,7 @@ docker build -t rawmind/alpine-hms:<version> .
 
 ## Versions
 
-- `0.0.1` [(Dockerfile)](https://github.com/rawmind0/alpine-hms/blob/0.0.1/Dockerfile)
+- `0.0.1-1` [(Dockerfile)](https://github.com/rawmind0/alpine-hms/blob/0.0.1-1/Dockerfile)
 
 
 ## Configuration
