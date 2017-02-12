@@ -1,6 +1,6 @@
 [![](https://images.microbadger.com/badges/image/rawmind/alpine-hms.svg)](https://microbadger.com/images/rawmind/alpine-hms "Get your own image badge on microbadger.com")
 
-alpine-revealjs 
+alpine-hms 
 ===============
 
 This image is the [hms][hms] service. It comes from [alpine-nginx][alpine-nginx].
